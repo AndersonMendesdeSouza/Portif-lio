@@ -78,19 +78,24 @@ body{
     box-shadow:0px 0px 10px #00ff08 ;
  }
  .blocomain{
-    
+    display: flex;
+    justify-content: space-between;
     align-items: center;
    color: #ffffff; 
+   font-size: 17px;
+   margin-top: 20px;
  }
  
  
  .lado-esquerdo{
-   max-width: 550px;
+   max-width: 650px;
    
  }
  .lado-esquerdo h2{
-   font-size: 30px;
-   text-shadow:0px 0px 15px #ffffff ;
+   letter-spacing: 2px;
+   font-size: 40px;
+  color: #d3d3d3;
+  text-shadow: 2px 2px 4px rgbe(0,0,0,0.7);
  }
  .lado-esquerdo h2 span{
    color: #00ff08;
@@ -109,8 +114,8 @@ body{
 transform: scale(1.1);
  }
  .lado-direito img{
-   width: 300px;
-   margin-left: 100px;
+   width: 350px;
+   margin-left: 40;
  position: relative;
   animation: alternar 3s ease-in-out infinite alternate;
 }
@@ -123,11 +128,12 @@ transform: scale(1.1);
    }
 }
 .seta{
-   color: #ffffff;
+   text-decoration: none;
+   color: #00ff08;
    text-align: center;
    position: relative;
    animation: seta 1s ease-in-out infinite alternate;
-   font-size: 40px;
+   font-size: 20px;
    font-weight: 900;
    font-family: 'Times New Roman', Times, serif;
 }
@@ -143,7 +149,7 @@ transform: scale(1.1);
 
 .especialidades .interface h1{
    color: #ffffff;
-   font-size: 30px;
+   font-size: 35px;
    text-align: center;
    margin-top: 50px;
 }
@@ -159,12 +165,13 @@ transform: scale(1.1);
 justify-content: center;
 align-items: center;
 margin: 20px;
-font-size: 50px;
+font-size: 70px;
 justify-content: space-evenly;
 }
 .ferramentas p{
    font-size: 15px;
    font-weight: bold;
+   font-family: 'Poppins';
    margin-top: 15px;
 }
 #fe{
@@ -176,39 +183,45 @@ justify-content: space-evenly;
  #fe:hover{
    transform: scale(1.1);
  
-   box-shadow: 0px 0px 10px #999999b0;
+   box-shadow: 0px 0px 10px #ffffffb0;
  }
- .ferramenta1{
-    position: relative;
-    animation: especialidadesCima 2s ease-in-out infinite alternate ;
- }
+  .sobreme{
+   display: flex;
+  
+   align-items: center;
+   
+  }
 
- .ferramenta2{
-   position: relative;
-   animation: especialidadesBaixo 2s ease-in-out infinite alternate ;
+.sobre .interface .sobreme .sobre-esquerdo img{
+  width: 300px;
+  margin: 30px;
+  border-radius: 20px;
 
- }
-
- .ferramenta3{
-   position: relative ;
-   animation: especialidadesBaixo 2s ease-in-out infinite alternate ;
- }
-
- .ferramenta4{
-   position: relative;
-   animation: especialidadesBaixo 2s ease-in-out infinite alternate ;
- }
-
-
-
- @keyframes especialidadesBaixo{
-   100%{
-      top:0px;
-   }
-0%{
-   top:10px;
 }
- }
+.sobre .interface .sobreme .sobre-direito{
+   max-width: 600px;
+margin-top: 200px;
+}
+.sobre .interface .sobreme .sobre-direito h1{
+   color: hsl(0, 0%, 94%);
+   line-height: 40px;
+   font-family: 'Poppins';
+   font-size: 40px;
+   text-shadow: 0px 0px 5px #ffffff;
+}
+.sobre .interface .sobreme .sobre-direito{
+   margin-bottom: 250px;
+   
+}
+.sobre .interface .sobreme .sobre-direito span{
+   font-family: 'Poppins';
+   color: #00ff08;
+  font-size: 40px;
+}
+.sobre .interface .sobreme .sobre-direito p{
+   color: #ffffff;
+   font-size: 17px;
+}
 
  
  
