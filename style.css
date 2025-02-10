@@ -226,7 +226,14 @@ margin-top: 200px;
    font-size: 17px;
 }
 
- 
+.apps a{
+    
+ margin: 5px;
+text-decoration: none;
+}
+.apps{
+   margin-top: 15px;
+}
  
 
  
