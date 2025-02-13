@@ -235,8 +235,9 @@ text-decoration: none;
    margin-top: 15px;
 }
 .portifolio{
-   padding: 80px;
+    
    box-shadow: 0px 0px 20px 0px #ffffffa8;
+ 
 }
 .portifolio .interface h1{
    color: #ffffff;
@@ -250,35 +251,49 @@ text-decoration: none;
 .todosprojeto{
    display: flex;
    justify-content: center;
- 
+ justify-content: space-between;
    margin-top: 40px;
 }
 #projeto{
     
-   width: 370px;
-   height: 250px;
+   width: 500px;
+   height: 300px;
    text-align: center;
    border-radius: 15px;
    color: #FFF;
    font-size: 20px;
    font-family: 'Poppin';
    
-   margin: 10px;
+   
    display: flex;
    align-items: center;
    justify-content: center;
  transition: 0.3s;
- box-shadow: 0px 0px 10px 2px #00ff08a4;
+ 
+ 
 }
 #projeto:hover{
     transform: scale(1.01);
-    box-shadow: 0px 0px 20px 2px #00ff08;
+ 
 }
 #projeto img{
-   width: 100%;
-   height:  100%;
+   width: 90%;
+   height:  90%;
 border: 0;
 border: transparent;
+padding: 10px;
+
 }
+
+.projeto3{
+   display: flex;
+   flex-direction: column;
  
+ 
+}
+.projeto3 h4{
+   font-size: 20px;
+  
+   margin-top: 10px;
+}
  
