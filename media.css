@@ -8,6 +8,11 @@
     box-sizing: border-box;
     font-family: 'Poppin', sans-serif;
  outline: none;
+ border: none;
+}button, input, textarea{
+    outline: none;
+}h1{
+    color: #00ff08;
 }
 body{
     background-color: black;
