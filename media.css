@@ -1,10 +1,13 @@
-
+@media (max-width: 975px) {
+   
+ 
   /* ESTILO GERAL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppin', sans-serif;
+ 
 }
 body{
     background-color: black;
@@ -15,12 +18,6 @@ html{
    scroll-behavior: smooth;
 }
  
- 
-.interface{
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 50px 4%;
-}
 .blocomain{
    display: flex;
 }
@@ -39,42 +36,59 @@ html{
  }
  header > .interface{
     display: flex;
-    justify-content: space-between;
+   flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ .logo ul{
+  margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: center;
+ }
+ .logo ul li{
+  
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  margin: 10%;
  }
  header .interface .logo a{
     text-align: center;
      
+   
  }
  header .interface .logo H1{
-    font-size: 5040;
-    margin-right: 100px;
      color: #00ff08;
-     font-family:  fantasy;
+     font-family: fantasy;
      letter-spacing: 2px;
      box-shadow:10px 10px 10px #00ff08 ;
     }
  header .interface .logo h2{
-    font-size: 20px;
-    margin-left: 50px;
+    font-size: 30px;
+  
     color: #ffffff;
  
  }
  header nav ul li{
-  
+  font-size: 20px;
     display: inline-block;
-
-    padding: 0 30px;
+ 
+    
  }
  header .btn-contato button{
     background-color: #ffffff;
-    padding: 10px 35px;
+    padding: 10px 70px;
     font-size: 18px;
     font-weight: 600;
     background-color: #00ff08 ;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    margin-top: 20px;
  }
  header .btn-contato button:hover{
 
@@ -82,11 +96,13 @@ html{
  }
  .blocomain{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
    color: #ffffff; 
    font-size: 17px;
    margin-top: 20px;
+ text-align: center;
  }
  
  
@@ -95,8 +111,8 @@ html{
    
  }
  .lado-esquerdo h2{
-   letter-spacing: 2px;
-   font-size: 40px;
+ 
+   font-size: 30px;
   color: #d3d3d3;
   text-shadow: 2px 2px 4px rgbe(0,0,0,0.7);
  }
@@ -117,10 +133,11 @@ html{
 transform: scale(1.1);
  }
  .lado-direito img{
-   width: 350px;
-   margin-left: 40;
+   width: 300px;
+  margin-top: -50px;
  position: relative;
   animation: alternar 3s ease-in-out infinite alternate;
+  padding-bottom: 50px;
 }
 @keyframes alternar{
    0%{
@@ -161,18 +178,15 @@ transform: scale(1.1);
     
 }
 .ferramentas{
-  padding: 50px 10px;
    display: flex;
+  flex-wrap: wrap;
+ width: 100%;
    color: #ffffff;
    text-align: center;
-justify-content: center;
-align-items: center;
-margin: 20px;
-font-size: 70px;
-justify-content: space-evenly;
+font-size: 52px;
 }
 .ferramentas p{
-   font-size: 15px;
+   font-size: 13px;
    font-weight: bold;
    font-family: 'Poppins';
    margin-top: 15px;
@@ -190,26 +204,26 @@ justify-content: space-evenly;
  }
   .sobreme{
    display: flex;
-  
    align-items: center;
-   
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
   }
 
 .sobre .interface .sobreme .sobre-esquerdo img{
   width: 300px;
-  margin: 30px;
   border-radius: 20px;
-
+  margin: -10s0px;
 }
 .sobre .interface .sobreme .sobre-direito{
    max-width: 600px;
-margin-top: 200px;
+ 
 }
 .sobre .interface .sobreme .sobre-direito h1{
    color: hsl(0, 0%, 94%);
    line-height: 40px;
    font-family: 'Poppins';
-   font-size: 40px;
+   font-size: 30px;
    text-shadow: 0px 0px 5px #ffffff;
 }
 .sobre .interface .sobreme .sobre-direito{
@@ -219,7 +233,7 @@ margin-top: 200px;
 .sobre .interface .sobreme .sobre-direito span{
    font-family: 'Poppins';
    color: #00ff08;
-  font-size: 40px;
+  font-size: 27px;
 }
 .sobre .interface .sobreme .sobre-direito p{
    color: #ffffff;
@@ -228,11 +242,18 @@ margin-top: 200px;
 
 .apps a{
     
- margin: 5px;
+ margin: 10px;
 text-decoration: none;
 }
 .apps{
-   margin-top: 15px;
+   margin-top: 30px;
+}
+ 
+.portifolio{
+    margin-top: -200px;
+
+ width: 100%;
+ height: 100%;
 }
 .portifolio .interface h1{
    color: #ffffff;
@@ -246,20 +267,19 @@ text-decoration: none;
 .todosprojeto{
    display: flex;
    justify-content: center;
- justify-content: space-between;
-   margin-top: 40px;
+ align-items: center;
+   margin-top: -150px;
+   flex-direction: column;
 }
 #projeto{
     
-   width: 500px;
-   height: 300px;
+   width: 400px;
+   height: 250px;
    text-align: center;
    border-radius: 15px;
    color: #FFF;
    font-size: 20px;
    font-family: 'Poppin';
-   
-   
    display: flex;
    align-items: center;
    justify-content: center;
@@ -272,11 +292,11 @@ text-decoration: none;
  
 }
 #projeto img{
-   width: 100%;
-   height:  100%;
+   width: 90%;
+   height:  90%;
 border: 0;
 border: transparent;
-padding: 10px;
+ 
 
 }
 
@@ -291,4 +311,5 @@ padding: 10px;
   
    margin-top: 10px;
 }
- 
+    
+}
