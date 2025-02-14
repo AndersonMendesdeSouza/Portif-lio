@@ -1,6 +1,9 @@
 @media (max-width: 975px) {
    
- 
+ *:focus-visible{
+    outline: none;
+   -webkit-tap-highlight-color: transparente;
+ }
   /* ESTILO GERAL */
 *{
     margin: 0;
@@ -9,8 +12,7 @@
     font-family: 'Poppin', sans-serif;
  outline: none;
  border: none;
-}button, input, textarea{
-    outline: none;
+ 
 }h1{
     color: #00ff08;
 }
