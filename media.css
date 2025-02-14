@@ -47,6 +47,7 @@ html{
     flex-wrap: wrap;
     width: 350px;
     justify-content: center;
+    justify-content: space-between;
  }
  .logo ul li{
   
