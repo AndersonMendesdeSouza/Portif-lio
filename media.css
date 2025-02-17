@@ -1,327 +1,377 @@
 @media (max-width: 975px) {
-   
- *:focus-visible{
-    outline: none;
-   -webkit-tap-highlight-color: transparente;
- }
-  /* ESTILO GERAL */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppin', sans-serif;
- outline: none;
- border: none;
+
+   *:focus-visible {
+      outline: none;
+      -webkit-tap-highlight-color: transparente;
+      overflow-x:hidden;
+   }
+
+   /* ESTILO GERAL */
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppin', sans-serif;
+      outline: none;
+      border: none;
+
+   }
+
+   h1 {
+      color: #00ff08;
+   }
+
+   body {
+      background-color: black;
+      height: 100vh;
+
+   }
+
+   html {
+      scroll-behavior: smooth;
+   }
+
+   .blocomain {
+      display: flex;
+   }
+
+   /* ESTILO DO CABEÇALHO */
+
+   header a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3;
+
+   }
+
+   header a:hover {
+      color: #00ff08;
+      transform: scale(1.05);
+   }
+
+   header>.interface {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   .logo ul {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 350px;
+      justify-content: center;
+      justify-content: space-between;
+   }
+
+   .logo ul li {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      text-align: center;
+      margin: 10%;
+   }
+
+   header .interface .logo a {
+      text-align: center;
+
+
+   }
+
+   header .interface .logo H1 {
+      color: #00ff08;
+      font-family: fantasy;
+      letter-spacing: 2px;
+      box-shadow: 10px 10px 10px #00ff08;
+      margin-left: 80px;
+   }
+
+   header .interface .logo h2 {
+      font-size: 25px;
+      margin-left: 100px;
+      font-family: fantasy;
+      letter-spacing: px;
+      color: #ffffff;
+
+   }
+
+   header nav ul li {
+      font-size: 20px;
+      display: inline-block;
+
+
+   }
+
+   header .btn-contato button {
+      background-color: #ffffff;
+      padding: 10px 70px;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: #00ff08;
+      border: 0;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+   }
+
+   header .btn-contato button:hover {
+
+      box-shadow: 0px 0px 10px #00ff08;
+   }
+
+   .blocomain {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff;
+      font-size: 17px;
+      margin-top: 20px;
+      text-align: center;
+   }
+
+
+   .lado-esquerdo {
+      max-width: 650px;
+
+   }
+
+   .lado-esquerdo h2 {
+
+      font-size: 30px;
+      color: #d3d3d3;
+      text-shadow: 2px 2px 4px rgbe(0, 0, 0, 0.7);
+   }
+
+   .lado-esquerdo h2 span {
+      color: #00ff08;
+   }
+
+   .lado-esquerdo button {
+      padding: 10px 60px;
+      margin-top: 50px;
+      border-radius: 30px;
+      background-color: #00ff08;
+      font-weight: bold;
+      border: 0;
+      box-shadow: 0px 0px 10px #00ff08;
+      transition: 0.3s;
+   }
+
+   .lado-esquerdo button:hover {
+      transform: scale(1.1);
+   }
+
+   .lado-direito img {
+      width: 300px;
+      margin-top: -50px;
+      position: relative;
+      animation: alternar 3s ease-in-out infinite alternate;
+      padding-bottom: 50px;
+   }
+
+   @keyframes alternar {
+      0% {
+         top: 0;
+      }
+
+      100% {
+         top: 20px
+      }
+   }
+
+   .seta {
+      text-decoration: none;
+      color: #00ff08;
+      text-align: center;
+      position: relative;
+      animation: seta 1s ease-in-out infinite alternate;
+      font-size: 20px;
+      font-weight: 900;
+      font-family: 'Times New Roman', Times, serif;
+   }
+
+   @keyframes seta {
+      0% {
+         top: 0;
+      }
+
+      100% {
+         top: 20px
+      }
+   }
+
+
+   .especialidades .interface h1 {
+      color: #ffffff;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 50px;
+   }
+
+   .especialidades .interface h1 span {
+      color: #00ff08;
+
+   }
+
+   .ferramentas {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      color: #ffffff;
+      text-align: center;
+      font-size: 80px;
+   }
+
+   .ferramentas p {
+      font-size: 13px;
+      font-weight: bold;
+      font-family: 'Poppins';
+      margin-top: 15px;
+   }
+
+   #fe {
+      border-radius: 10px;
+
+      padding: 50px;
+      transition: 0.3s;
+   }
+
+   #fe:hover {
+      transform: scale(1.1);
+
+      box-shadow: 0px 0px 10px #ffffffb0;
+   }
+
+   .sobreme {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+   }
+
+   .sobre .interface .sobreme .sobre-esquerdo img {
+      width: 300px;
+      border-radius: 20px;
+      margin: -100px;
+   }
+
+   .sobre .interface .sobreme .sobre-direito {
+      max-width: 600px;
+
+   }
+
+   .sobre .interface .sobreme .sobre-direito h1 {
+      color: hsl(0, 0%, 94%);
+      line-height: 40px;
+      font-family: 'Poppins';
+      font-size: 30px;
+      text-shadow: 0px 0px 5px #ffffff;
+   }
+
+   .sobre .interface .sobreme .sobre-direito {
+      margin-bottom: 250px;
+
+   }
+
+   .sobre .interface .sobreme .sobre-direito span {
+      font-family: 'Poppins';
+      color: #00ff08;
+      font-size: 27px;
+   }
+
+   .sobre .interface .sobreme .sobre-direito p {
+      color: #ffffff;
+      font-size: 17px;
+   }
+
+   .apps a {
+
+      margin: 10px;
+      text-decoration: none;
+   }
+
+   .apps {
+      margin-top: 30px;
+   }
+
+   .portifolio {
+      margin-top: -200px;
  
-}h1{
-    color: #00ff08;
-}
-body{
-    background-color: black;
-    height: 100vh;
- 
-}
-html{
-   scroll-behavior: smooth;
-}
- 
-.blocomain{
-   display: flex;
-}
-/* ESTILO DO CABEÇALHO */
- 
- header a{
-    color: white;
-    text-decoration: none;
-     display: inline-block;
-     transition: 0.3;
- 
-}
- header a:hover{
-    color: #00ff08;
-    transform: scale(1.05);
- }
- header > .interface{
-    display: flex;
-   flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
- }
- .logo ul{
-  margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 350px;
-    justify-content: center;
-    justify-content: space-between;
- }
- .logo ul li{
-  
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
-  margin: 10%;
- }
- header .interface .logo a{
-    text-align: center;
+      width: 90%;
+      height: 100%;
+   }
+
+   .portifolio .interface h1 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 35px;
+   }
+
+   .portifolio .interface h1 span {
+      color: #00ff08;
+      text-align: center;
+   }
+
+   .todosprojeto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -10px;
+      flex-direction: column;
+      max-width: 330px ;
      
-   
- }
- header .interface .logo H1{
-     color: #00ff08;
-     font-family: fantasy;
-     letter-spacing: 2px;
-     box-shadow:10px 10px 10px #00ff08 ;
-     margin-left: 80px;
-    }
- header .interface .logo h2{
-    font-size: 25px;
-    margin-left: 100px;
-  font-family: fantasy;
-  letter-spacing: px;
-    color: #ffffff;
- 
- }
- header nav ul li{
-  font-size: 20px;
-    display: inline-block;
- 
-    
- }
- header .btn-contato button{
-    background-color: #ffffff;
-    padding: 10px 70px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00ff08 ;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 20px;
- }
- header .btn-contato button:hover{
-
-    box-shadow:0px 0px 10px #00ff08 ;
- }
- .blocomain{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-   color: #ffffff; 
-   font-size: 17px;
-   margin-top: 20px;
- text-align: center;
- }
- 
- 
- .lado-esquerdo{
-   max-width: 650px;
-   
- }
- .lado-esquerdo h2{
- 
-   font-size: 30px;
-  color: #d3d3d3;
-  text-shadow: 2px 2px 4px rgbe(0,0,0,0.7);
- }
- .lado-esquerdo h2 span{
-   color: #00ff08;
- }
- .lado-esquerdo button{
-   padding: 10px 60px;
-   margin-top: 50px;
-   border-radius: 30px;
-   background-color: #00ff08;
-   font-weight: bold;
-   border: 0;
-   box-shadow: 0px 0px 10px #00ff08;
-   transition: 0.3s;
- }
- .lado-esquerdo button:hover{
-transform: scale(1.1);
- }
- .lado-direito img{
-   width: 300px;
-  margin-top: -50px;
- position: relative;
-  animation: alternar 3s ease-in-out infinite alternate;
-  padding-bottom: 50px;
-}
-@keyframes alternar{
-   0%{
-      top:0;
+       
    }
-   100%{
-      top:20px
+
+   #projeto {
+
+      width: 400px;
+      height: 250px;
+      text-align: center;
+      border-radius: 15px;
+      color: #FFF;
+      font-size: 20px;
+      font-family: 'Poppin';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s;
+      margin: 50px;
+
+
    }
-}
-.seta{
-   text-decoration: none;
-   color: #00ff08;
-   text-align: center;
-   position: relative;
-   animation: seta 1s ease-in-out infinite alternate;
-   font-size: 20px;
-   font-weight: 900;
-   font-family: 'Times New Roman', Times, serif;
-}
-@keyframes seta{
-   0%{
-      top:0;
+
+   #projeto:hover {
+      transform: scale(1.05);
+
    }
-   100%{
-      top:20px
+
+   #projeto img {
+      width: 90%;
+      height: 90%;
+      border: 0;
+      border: transparent;
+
+
    }
-}
+
+   .projeto3 {
+      display: flex;
+      flex-direction: column;
 
 
-.especialidades .interface h1{
-   color: #ffffff;
-   font-size: 35px;
-   text-align: center;
-   margin-top: 50px;
-}
-.especialidades .interface h1 span{
-   color: #00ff08;
-    
-}
-.ferramentas{
-   display: flex;
-  flex-wrap: wrap;
- width: 100%;
-   color: #ffffff;
-   text-align: center;
-font-size: 80px;
-}
-.ferramentas p{
-   font-size: 13px;
-   font-weight: bold;
-   font-family: 'Poppins';
-   margin-top: 15px;
-}
-#fe{
-   border-radius: 10px;
-    
-   padding: 50px;
-   transition: 0.3s;
-}
- #fe:hover{
-   transform: scale(1.1);
- 
-   box-shadow: 0px 0px 10px #ffffffb0;
- }
-  .sobreme{
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-  }
+   }
 
-.sobre .interface .sobreme .sobre-esquerdo img{
-  width: 300px;
-  border-radius: 20px;
-  margin: -100px;
-}
-.sobre .interface .sobreme .sobre-direito{
-   max-width: 600px;
- 
-}
-.sobre .interface .sobreme .sobre-direito h1{
-   color: hsl(0, 0%, 94%);
-   line-height: 40px;
-   font-family: 'Poppins';
-   font-size: 30px;
-   text-shadow: 0px 0px 5px #ffffff;
-}
-.sobre .interface .sobreme .sobre-direito{
-   margin-bottom: 250px;
-   
-}
-.sobre .interface .sobreme .sobre-direito span{
-   font-family: 'Poppins';
-   color: #00ff08;
-  font-size: 27px;
-}
-.sobre .interface .sobreme .sobre-direito p{
-   color: #ffffff;
-   font-size: 17px;
-}
+   .projeto3 h4 {
+      font-size: 20px;
 
-.apps a{
-    
- margin: 10px;
-text-decoration: none;
-}
-.apps{
-   margin-top: 30px;
-}
- 
-.portifolio{
-    margin-top: -200px;
+      margin-top: 5px;
+   }
 
- width: 100%;
- height: 100%;
-}
-.portifolio .interface h1{
-   color: #ffffff;
-   text-align: center;
-   font-size: 35px;
-}
-.portifolio .interface h1 span{
-   color: #00ff08;
-   text-align: center;
-}
-.todosprojeto{
-   display: flex;
-   justify-content: center;
- align-items: center;
-   margin-top: -10px;
-   flex-direction: column;
-}
-#projeto{
-    
-   width: 400px;
-   height: 250px;
-   text-align: center;
-   border-radius: 15px;
-   color: #FFF;
-   font-size: 20px;
-   font-family: 'Poppin';
-   display: flex;
-   align-items: center;
-   justify-content: center;
- transition: 0.5s;
- margin: 50px;
- 
- 
-}
-#projeto:hover{
-    transform: scale(1.05);
- 
-}
-#projeto img{
-   width: 90%;
-   height:  90%;
-border: 0;
-border: transparent;
- 
-
-}
-
-.projeto3{
-   display: flex;
-   flex-direction: column;
- 
- 
-}
-.projeto3 h4{
-   font-size: 20px;
-  
-   margin-top: 5px;
-}
-    
 }
