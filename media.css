@@ -279,7 +279,7 @@ text-decoration: none;
    display: flex;
    justify-content: center;
  align-items: center;
-   margin-top: -150px;
+   margin-top: -10px;
    flex-direction: column;
 }
 #projeto{
@@ -296,6 +296,7 @@ text-decoration: none;
    justify-content: center;
  transition: 0.5s;
  margin: 50px;
+ 
  
 }
 #projeto:hover{
@@ -320,7 +321,7 @@ border: transparent;
 .projeto3 h4{
    font-size: 20px;
   
-   margin-top: 10px;
+   margin-top: 100px;
 }
     
 }
