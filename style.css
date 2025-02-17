@@ -235,6 +235,10 @@ text-decoration: none;
 .apps{
    margin-top: 15px;
 }
+.portifolio{
+   display: flex;
+   flex-direction: column;
+}
 .portifolio .interface h1{
    color: #ffffff;
    text-align: center;
@@ -286,6 +290,16 @@ padding: 10px;
    flex-direction: column;
  
  
+}
+.projeto2 {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+.projeto2 h4{
+   font-size: 20px;
+  
+   margin-top: 15px;
 }
 .projeto3 h4{
    font-size: 20px;
