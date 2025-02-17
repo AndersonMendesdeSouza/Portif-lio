@@ -295,7 +295,7 @@ text-decoration: none;
    align-items: center;
    justify-content: center;
  transition: 0.5s;
- 
+ margin: 50px;
  
 }
 #projeto:hover{
